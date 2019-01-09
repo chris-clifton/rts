@@ -18,7 +18,7 @@ The second version, is slightly different in that it accounts for an obvious edg
 
 I didn't want to go nuts accounting for every possible edge case, but if I were to rewrite it to consider another, I would write the method to handle non-digit input in the array.  Upon request, I'd be happy to submit that version of the method.
 
-I felt like the second method was the right one to hand in due to how likely an occurrence of the same number would be and the amount of additional code didn't seem significant.
+I felt like the second method was the right one to hand in due to how likely an occurrence of the same number would be and the amount of additional code didn't seem very significant.
 
 ### Second Challenge
 > #2  Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”

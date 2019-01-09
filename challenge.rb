@@ -4,15 +4,9 @@ class Challenge
   # and the number that are below
   # e.g.: array [1, 5, 2, 1, 10] with input 6, print "above: 1, below: 4"
 
-  # def above_and_below(array, number)
-  #   above = 0
-  #   below = 0
-
-  #   array.each do |num|
-  #     num > number ? above += 1 : below += 1
-  #   end
-
-  #   p "above: #{above}, below: #{below}"
+  # def above_or_below(array, input)
+  #   above, below = array.partition{ |num| num > input }
+  #   p "above: #{above.length}, below: #{below.length}"
   # end
 
   def above_and_below(array, number)
