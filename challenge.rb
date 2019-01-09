@@ -12,7 +12,7 @@ class Challenge
   #     num > number ? above += 1 : below += 1
   #   end
 
-  #   "above: #{above}, below: #{below}"
+  #   p "above: #{above}, below: #{below}"
   # end
 
   def above_and_below(array, number)
@@ -29,7 +29,7 @@ class Challenge
         equal += 1
       end
     end
-    "above: #{above}, below: #{below}"
+    p "above: #{above}, below: #{below}"
   end
 
   # Rotate the characters in a string by a given input and have the overflow

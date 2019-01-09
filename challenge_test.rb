@@ -18,7 +18,7 @@ class ChallengeTest < Minitest::Test
   def test_above_and_below_with_equal
     # skip
     test = Challenge.new
-    assert_equal("above: 1, below: 4", test.above_and_below([1, 5, 2, 1, 6, 10], 6))
+    assert_equal("above: 1, below: 4", test.above_and_below([1, 5, 2, 1, 10, 6], 6))
     assert_equal("above: 5, below: 0", test.above_and_below([2, 3, 4, 5, 6, 1], 1))
     assert_equal("above: 0, below: 5", test.above_and_below([1, 2, 3, 4, 5, 10], 10))
   end
@@ -28,7 +28,7 @@ class ChallengeTest < Minitest::Test
     test = Challenge.new
     assert_equal("above: 0, below: 5", test.above_and_below([1, 5, 2, 1, -10], 6))
     assert_equal("above: 5, below: 1", test.above_and_below([2, 3, 4, 5, 6, -1], 1))
-    assert_equal("above: 0, below: 6", test.above_and_below([1, 2, 3, 4, 5, 10, -11], 10))
+    assert_equal("above: 0, below: 6", test.above_and_below([1, 2, 3, 4, 5, -11], 10))
   end
 
   def test_rotate_string

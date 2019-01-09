@@ -12,7 +12,7 @@ by: Chris Clifton
 ### First Challenge
 > #1  Print the number of integers in an array that are above the given input and the number that are below, e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
 
-For the first challenge, I ended up writing two methods.  The first, which is commented out, is the short and sweet version that only calculates the `above` and `below` values, as directed in the question, and doesn't handle any edge cases.
+For the first challenge, I ended up writing two methods.  The first, which is commented out, is the short and sweet version that only calculates the `above` and `below` values, as directed in the question, and doesn't handle any edge cases.  In order to test this method, uncomment the `skip` on line 19 of `challenge_test.rb`, since equal values are included in these tests and throw off the `below` values.
 
 The second version, is slightly different in that it accounts for an obvious edge case- if an integer in the array is the same as the input integer.  The method will track all occurrences of `equal` numbers so the program doesn't raise an exception, but it doesn't do anything with them.
 
@@ -25,7 +25,7 @@ I felt like the second method was the right one to hand in due to how likely an 
 
 The `rotate_string` method is pretty straightforward.  My only notes are as follows:
   - If modifying the original string were off the table, I would have used `String#dup` and held a copy of the original string in another local variable and called the `.slice` method on that.
-  - If I were to rewrite to consider an edge case, I would consider tackling what to do with whitespace first.  
+  - If I were to rewrite to consider an edge case, I would consider tackling what to do with whitespace first.
 
 ## Written Question
 >#3  If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
@@ -34,4 +34,4 @@ If I could change anything with Ruby, I think I'd change all methods in the stan
 
 What I would like, because I think it would add uniformity and even more ease of use, is that *any* method that performs a destructive action would get the bang.
 
-It's pretty easy to tell that if you call `.delete` on an array you are mutating that array, but some methods such as `.take` and `.pop` are a little less clear, even if they do't have a non-destructive version.
+It's pretty easy to tell that if you call `.delete` on an array you are mutating that array, but some methods such as `.take` and `.pop` are a little less clear, even if they don't have a non-destructive version.
