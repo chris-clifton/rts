@@ -12,7 +12,7 @@ by: Chris Clifton
 ### First Challenge
 > #1  Print the number of integers in an array that are above the given input and the number that are below, e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
 
-For the first challenge, I ended up writing two methods.  The first, which is commented out, is the short and sweet version that only calculates the `above` and `below` values, as directed in the question, and doesn't handle any edge cases.  In order to test this method, uncomment the `skip` on line 19 of `challenge_test.rb`, since equal values are included in these tests and throw off the `below` values.
+For the first challenge, I ended up writing two methods.  The first, which is commented out, is the short and sweet version that only calculates the `above` and `below` values, as directed in the question, and doesn't handle any edge cases.  In order to test this method, uncomment the `skip` on line 19 of `challenge_test.rb`, since equal values are included in these tests throw off the `below` values.
 
 The second version, is slightly different in that it accounts for an obvious edge case- if an integer in the array is the same as the input integer.  The method will track all occurrences of `equal` numbers so the program doesn't raise an exception, but it doesn't do anything with them.
 
